@@ -1,11 +1,11 @@
 package com.example.taskmanagement.model;
+
 import jakarta.persistence.*;
 import java.util.Date;
 
 @Entity
 @Table(name = "tasks")
 public class Task {
-
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
@@ -21,10 +21,6 @@ public class Task {
 
     public Long getId() {
         return id;
-    }
-
-    public void setId(Long id) {
-        this.id = id;
     }
 
     public String getTitle() {
@@ -62,6 +58,17 @@ public class Task {
         this.title = title;
         this.description = description;
         this.dueDate = dueDate;
+    }
+
+    // toString
+    @Override
+    public String toString() {
+        return "Task{" +
+                "id=" + id +
+                ", title='" + title +
+                ", description='" + description +
+                ", dueDate='" + dueDate +
+                '}';
     }
 
 }
