@@ -33,7 +33,7 @@ This project implements a Task Management RESTful API using Java with Spring Boo
     - Update `application.properties` with your database credentials:
     
         ```properties
-        spring.datasource.url=jdbc:mysql://localhost:3306/task_db
+        spring.datasource.url=jdbc:mysql://localhost:3306/task
         spring.datasource.username=your_username
         spring.datasource.password=your_password
         ```
